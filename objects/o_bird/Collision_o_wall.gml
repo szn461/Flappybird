@@ -1,0 +1,9 @@
+if(global.gamestage==GAME_STAGE.RUN){
+	vspeed=0;
+	vy=0;
+	global.gamestage=GAME_STAGE.OVER;
+	audio_play_sound(hitground,1,false);
+	if(!alarm[0]){
+		alarm[0]=30;
+	}
+}
